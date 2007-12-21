@@ -9,6 +9,7 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
 Source0:	%{real_name}-%{version}.tar.bz2
 BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 GOST 28147-89 is a 64-bit symmetric block cipher with a 256-bit key developed
