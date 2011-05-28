@@ -3,7 +3,7 @@
 Summary:	Crypt-GOST module for perl 
 Name:		perl-%{real_name}
 Version:	1.00
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
