@@ -1,0 +1,13 @@
+diff -uNr Crypt-GOST-1.00/GOST.xs Crypt-GOST-1.00p/GOST.xs
+--- Crypt-GOST-1.00/GOST.xs	2001-05-13 16:11:35.000000000 +0200
++++ Crypt-GOST-1.00p/GOST.xs	2013-08-06 14:36:05.084500779 +0300
+@@ -54,7 +54,8 @@
+             output = sv_newmortal();
+         outlen = 8;
+ 
+-        if (SvREADONLY(output) || !SvUPGRADE(output, SVt_PV))
++        SvUPGRADE(output, SVt_PV);
++        if (SvREADONLY(output))
+             croak("cannot use output as lvalue");
+ 
+         gost_crypt(self,
