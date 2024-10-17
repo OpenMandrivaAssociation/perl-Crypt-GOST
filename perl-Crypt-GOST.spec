@@ -7,7 +7,7 @@ Version:	1.00
 Release:	11
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
+URL:		https://search.cpan.org/dist/%{real_name}
 Source0:	%{real_name}-%{version}.tar.bz2
 Patch0:         Crypt-GOST-1.00-fix-build.patch
 BuildRequires:	perl-devel
