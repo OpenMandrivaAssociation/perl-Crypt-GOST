@@ -10,6 +10,7 @@ Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{real_name}
 Source0:	%{real_name}-%{version}.tar.bz2
 Patch0:         Crypt-GOST-1.00-fix-build.patch
+BuildRequires:	make
 BuildRequires:	perl-devel
 
 %description
